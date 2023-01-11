@@ -44,5 +44,9 @@ The attributes collect can be customized by changing which functions are called.
 	"runtime": 38.94
 }
 ```
+## Architecture 
+
+![image](https://user-images.githubusercontent.com/38281651/211887441-84392c61-6210-4237-8794-351339dcc351.png)
+
 
 
