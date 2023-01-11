@@ -6,7 +6,7 @@
 </p>
 
 
-# Using Inspector in Serverless Functions
+# Reverse Engineering of Serverless Functions
 
 In your handler function: 
 
