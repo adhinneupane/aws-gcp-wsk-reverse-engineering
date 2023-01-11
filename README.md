@@ -1,4 +1,14 @@
+<p align="left" >
+ <img width="150px" height="100px" alt="aws-logo" src="https://user-images.githubusercontent.com/38281651/211433086-9002c229-c939-4b24-982a-d6767b9b8320.png">
+<img width="190px" height="100px" alt="google-platform-logo" src="https://user-images.githubusercontent.com/38281651/211888072-143f76ff-25bd-4e76-905c-c76b3934fbc1.png">
+ <img width="170px" height="100px" alt="openwhisk-logo" src="https://user-images.githubusercontent.com/38281651/211433466-8cc30e59-2e37-4ec4-a0f6-09a7ce3bb6fd.png">	
+
+</p>
+
+
 # Using Inspector in Serverless Functions
+
+In your handler function: 
 
 ```
 from Inspector import *
@@ -16,9 +26,9 @@ def myFunction(request):
   return inspector.finish()
 
 ``` 
-Example Output JSON:
+## Example Output JSON:
 
-The attributes collect can be customized by changing which functions are called. For more detailed descriptions of each variable and the functions that collect them, please see the framework documentation for each language.
+The attributes collect can be customized by changing which functions are called. For more detailed descriptions of each variable and the functions that collect them, please read the full documentation.
 
 ```
 {
@@ -44,9 +54,40 @@ The attributes collect can be customized by changing which functions are called.
 	"runtime": 38.94
 }
 ```
-## Architecture 
+
+
+
+# Metrics Collected
+
+```
+uuid:            A unique identifier assigned to a container if one does not already exist.
+newcontainer:    Whether a container is new (no assigned uuid) or if it has been used before.
+vmuptime:        The time when the system started in Unix time.
+cpuUsrDelta:      Time spent normally executing in user mode.
+cpuNiceDelta:     Time spent executing niced processes in user mode.
+cpuKrnDelta:      Time spent executing processes in kernel mode.
+cpuIdleDelta:     Time spent idle.
+cpuIowaitDelta:   Time spent waiting for I/O to complete.
+cpuIrqDelta:      Time spent servicing interrupts.
+cpuSoftIrqDelta:  Time spent servicing software interrupts.
+vmcpustealDelta:  Time spent waiting for real CPU while hypervisor is using another virtual CPU.
+contextSwitchesDelta: Number of context switches.
+```
+
+
+## Sample Architecture and Results: [AWS] 
 
 ![image](https://user-images.githubusercontent.com/38281651/211887441-84392c61-6210-4237-8794-351339dcc351.png)
 
+### Sample Results
+
+![image](https://user-images.githubusercontent.com/38281651/211889032-c903b3ea-87a4-41b6-8356-091e362dc9cf.png)
+
+
+
+## Author 
+
+Ashutosh Neupane
+<br> adhinneupane2020@gmail.com </br>
 
 
