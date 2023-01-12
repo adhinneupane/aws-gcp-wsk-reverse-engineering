@@ -28,7 +28,7 @@ def myFunction(request):
 ``` 
 ## Example Output JSON:
 
-The attributes collect can be customized by changing which functions are called. For more detailed descriptions of each variable and the functions that collect them, please read the full documentation.
+The attributes collected can be customized by changing which functions are called. For more detailed descriptions of each variable and the functions that collect them, please read the full documentation.
 
 ```
 {
